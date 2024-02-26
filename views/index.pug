@@ -1,0 +1,59 @@
+//- index.pug
+doctype html
+html
+  head
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul
+            div#logo
+                img(src="/static/logo.png")
+                | HDA
+            li #[a(href="/") Home ]
+            li #[a(href="/") About ]
+            li #[a(href="/") Sevices ]
+            li #[a(href="/") Class Info]
+            li #[a(href="/") Contuct us ]
+    
+    section#introsection 
+        div Welcome to Shakil's Danse Academy
+        div.small Eat Sleep Dance Repat 
+
+    section#missionsection 
+        h2 Our Mission 
+        div.card
+            h3 Dance Perfection
+            div.card-box 
+                div.card-img 
+                    img(src="/static/1.png")
+                div.card-content 
+                    p This is the best dance academy of the universe    
+
+        div.card
+            h3 Dance the way you like
+            div.card-box 
+                div.card-img 
+                    img(src="/static/2.png")
+                div.card-content 
+                    p This is the best dance academy of the universe
+        div.card
+            h3 Expert Teaching 
+            div.card-box 
+                div.card-img 
+                    img(src="/static/3.png")
+                div.card-content 
+                    p This is the best dance academy of the universe       
+
+    section#sponsorssection 
+        h2 Our Sponsors 
+        div#sponsors 
+            img(src="/static/img/logo1.png", alt="sponsors image", Class="spimage")
+            img(src="/static/img/logo2.png", alt="sponsors image", Class="spimage")
+            img(src="/static/img/logo3.png", alt="sponsors image", Class="spimage")
+            img(src="/static/img/logo4.png", alt="sponsors image", Class="spimage")
+
+    footer#footer 
+        | Copyright @ 2024 Shakil DanceAcademy.com All rights | recerved                   
+    script
+      include ../static/index.js
